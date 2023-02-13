@@ -22,6 +22,7 @@
 		"Chrome 89"
 	],
 	"dependencies": {
+		"bootstrap-icons": "^1.10.3",
 		"daisyui": "^2.50.0",
 		"electron-context-menu": "^3.3.0",
 		"electron-reloader": "^1.2.3",

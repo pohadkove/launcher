@@ -1,5 +1,6 @@
 const windowStateManager = require('electron-window-state');
 const { app, BrowserWindow, ipcMain } = require('electron');
+const { shell } = require('electron')
 const contextMenu = require('electron-context-menu');
 const serve = require('electron-serve');
 const path = require('path');
@@ -56,6 +57,7 @@ function createWindow() {
 		windowState.saveState(mainWindow);
 	});
 
+
 	return mainWindow;
 }
 
@@ -65,7 +67,7 @@ contextMenu({
 	showCopyImage: false,
 	prepend: (defaultActions, params, browserWindow) => [
 		{
-			label: 'Make App 💻',
+			label: 'blank',
 		},
 	],
 });
